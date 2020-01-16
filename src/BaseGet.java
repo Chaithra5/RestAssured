@@ -20,7 +20,7 @@ public class BaseGet {
 		
 		param("location","-33.8670522,151.1957362").
 		param("radius","1500").
-		param("key","AIzaSyBxEAKPG73dCRqy3o4eWZBcvt8s3s8bpPk").
+		param("key","").
 		when().
 		get("/maps/api/place/nearbysearch/json").
 		then().assertThat().statusCode(200).and().contentType(ContentType.JSON).and()
